@@ -10,14 +10,14 @@ namespace Peoples.Controllers
 
         private readonly ILogger<PersonsController> _logger;
 
-        private readonly string _filePath = "Persons.json";
+        private readonly string _filePath = @"./Persons.js";
 
         public PersonsController(ILogger<PersonsController> logger)
         {
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "GetPersons")]
         public IEnumerable<Person> Get()
         {
             List<Person> source = new List<Person>();

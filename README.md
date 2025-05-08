@@ -145,7 +145,3 @@ export class CpfPipe implements PipeTransform {
         p.Estado = "SP" AND p.Idade BETWEEN 25 AND 40
     ORDER BY p.Nome
 ```
-
-## 7
-
-## 8

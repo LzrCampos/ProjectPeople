@@ -75,7 +75,7 @@ export class GetHttpDatabase {
   constructor(private _httpClient: HttpClient) { }
 
   getRepoIssues(): Observable<Person[]> {
-    const href = 'https://localhost:7041';
+    const href = 'http://localhost:5226';
     const requestUrl = `${href}/persons`;
 
     return this._httpClient.get<Person[]>(requestUrl);
